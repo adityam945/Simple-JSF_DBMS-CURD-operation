@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+    >
+    <h:head>
+      <title>Queue Solution</title>  
+    </h:head>
+    <h:body>
+        <h:form>
+            <center>  
+<h2><h:outputText value="Queue Solution"/></h2>  
+</center>
+            <h:panelGrid columns="2" style="margin-left:auto;margin-right: auto">
+                <h:outputLabel value="User Id : "></h:outputLabel>
+                <h:inputText  size="15" maxlength="15"></h:inputText>
+                <h:outputLabel value="Password : "></h:outputLabel>
+                <h:inputSecret  size="15"></h:inputSecret>                
+            </h:panelGrid>
+            <h:panelGrid columns="1" style="margin-left:auto;margin-right: auto">
+                <h:commandButton action="admin_access.xhtml"  value="Login" ></h:commandButton>
+            </h:panelGrid>
+                  
+            <h:panelGrid columns="2" style="margin: auto">
+                <h:commandLink value = "Click here if Student" action = "student_create.xhtml" />
+              </h:panelGrid>      
+        </h:form>
+        
+    </h:body>
+</html>
