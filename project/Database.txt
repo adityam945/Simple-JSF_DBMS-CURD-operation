@@ -1,0 +1,38 @@
+Queue Solution  Database tables:
+
+enter these commands in mysql:
+
+create database record;
+
+use record;
+Tables as follows:
+1)
+create table users(id int not null primary key auto_increment, name varchar(100),   
+email varchar(50), password varchar(20), gender varchar(1), address varchar(2));  
+
+
+2)
+CREATE TABLE `user1` ( 
+`userId` bigint(10) NOT NULL, 
+`name` varchar(15) NOT NULL, 
+`address` varchar(255) NOT NULL, 
+`created_date` date NOT NULL, 
+PRIMARY KEY (`userId`) 
+);
+
+Values:
+insert into user1(userId,day,session,created_date) values(1, 'Monday', 'morning', '2012-11-4');
+insert into user1(userId,day,session,created_date) values(2, 'Monday', 'afternoon', '2012-11-4');
+insert into user1(userId,day,session,created_date) values(3, 'Tuesday', 'morning', '2012-11-5');
+insert into user1(userId,day,session,created_date) values(4, 'Wednesday', 'afternoon', '2012-11-6');
+insert into user1(userId,day,session,created_date) values(5, 'Monday', 'morning', '2012-11-7');
+insert into user1(userId,day,session,created_date) values(6, 'Saturday', 'morning', '2012-11-9');
+insert into user1(userId,day,session,created_date) values(7, 'Monday', 'afternoon', '2012-11-11');
+
+
+3)
+
+create view booked_slots as
+select a.userId,b.name,b.email,b.address
+from user1 a,users b 
+where a.userId=b.address;

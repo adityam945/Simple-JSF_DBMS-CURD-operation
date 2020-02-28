@@ -1,0 +1,14 @@
+extract files from .zip folder and then proceed these following steps:
+Steps to execute:
+1)Add project to netbeans.
+2)check out the queue_soln_database and enter all commands and tables.
+3)Add jar mysql-connector-java
+4)Run
+
+
+Requirements:
+1)Netbeans IDE 8.0.2
+2)java version  1.8.0
+3)mysql-connector-java-8.0.17  (jar)
+4)mysql(database)
+5)GlassFish Server 4.1(or Tomcat 8.1)
