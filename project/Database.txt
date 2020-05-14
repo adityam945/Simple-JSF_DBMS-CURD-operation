@@ -4,6 +4,9 @@ enter these commands in mysql:
 
 create database record;
 
+
+
+
 use record;
 Tables as follows:
 1)
