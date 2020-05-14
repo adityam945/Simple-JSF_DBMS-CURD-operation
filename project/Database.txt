@@ -24,6 +24,15 @@ PRIMARY KEY (`userId`)
 );
 
 
+
+3)
+
+create view booked_slots as
+select a.userId,b.name,b.email,b.address
+from user1 a,users b 
+where a.userId=b.address;
+
+
 Values:
 insert into user1(userId,day,session,created_date) values(1, 'Monday', 'morning', '2012-11-4');
 insert into user1(userId,day,session,created_date) values(2, 'Monday', 'afternoon', '2012-11-4');
@@ -33,11 +42,3 @@ insert into user1(userId,day,session,created_date) values(5, 'Monday', 'morning'
 insert into user1(userId,day,session,created_date) values(6, 'Saturday', 'morning', '2012-11-9');
 insert into user1(userId,day,session,created_date) values(7, 'Monday', 'afternoon', '2012-11-11');
 
-
-
-3)
-
-create view booked_slots as
-select a.userId,b.name,b.email,b.address
-from user1 a,users b 
-where a.userId=b.address;
